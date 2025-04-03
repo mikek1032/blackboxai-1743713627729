@@ -1,0 +1,34 @@
+/* Mobile controls - show only on small screens */
+@media (max-width: 768px) {
+    #controls {
+        display: flex !important;
+    }
+}
+
+/* Game canvas styling */
+#game-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* Pause button hover effect */
+#pause-btn:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+}
+
+/* Control button active states */
+.control-btn:active {
+    transform: scale(0.95);
+    background-color: #003366;
+}
+
+/* Score entry animation */
+@keyframes scoreEntry {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.score-card {
+    animation: scoreEntry 0.3s ease-out;
+}
